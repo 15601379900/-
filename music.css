@@ -1,0 +1,10 @@
+#soundscape{border-bottom:1px solid var(--line);background:#eee8dc66;padding:9px 5%;font-size:12px;color:var(--muted)}
+.soundscape-inner{display:flex;align-items:center;justify-content:flex-end;gap:16px;flex-wrap:wrap;max-width:1500px;margin:auto}
+#music-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:7px 12px;color:var(--red);background:transparent;border:1px solid #8b302738;border-radius:3px;white-space:nowrap;font-size:13px}
+#music-toggle:hover,#soundscape.is-playing #music-toggle{background:#8b30270a;border-color:var(--red)}
+#music-toggle svg{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+#music-toggle:disabled{cursor:wait;opacity:.65}.music-title{line-height:1.5}.music-volume{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.music-volume input{width:86px;min-height:32px;margin:0;accent-color:var(--red);cursor:pointer}.music-volume input:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.music-status:empty{display:none}.music-status{color:var(--red);flex-basis:100%;text-align:right}
+@media(max-width:760px){#soundscape{padding:9px 6%}.soundscape-inner{justify-content:space-between;column-gap:10px;row-gap:4px}.music-title{order:3;flex-basis:100%;font-size:11px}.music-volume{font-size:11px}.music-volume input{width:72px}.music-status{text-align:left;order:4}}
+@media print{#soundscape{display:none}}
